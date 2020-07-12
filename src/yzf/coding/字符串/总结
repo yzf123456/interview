@@ -1,0 +1,8 @@
+Arrays.sort()可以对数组进行排序；Arrays.toString()，可以用来输出整个数组.
+Collections.sort()对数字和字符串泛型的list进行排序（字符串的排序）
+String，是固定长度的；StringBuffer和StringBuilder是可以扩充的，故可以用来append（替换，左旋转），用的时候记得最后使用.toString()转化成String。
+trim()函数可以去掉首位空格
+subString（）函数左闭右开
+递归的时候，一定要分步骤，1、递归的结束条件；2、推进变量；3、流程
+map的性质，无序不可重复，可以用来记录重复的标志。set集合也是不可重复，可以用来判断是否用重复元素。
+集合转数组  list.toArray(new String[list.size()]);（字符串的排序）
