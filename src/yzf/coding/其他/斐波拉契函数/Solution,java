@@ -1,0 +1,28 @@
+//方法一、递归
+public class Solution {
+    public int Fibonacci(int n) {
+        if (n==0) return 0;
+        if(n==1 || n==2) return 1;
+        return Fibonacci(n-2)+Fibonacci(n-1);
+
+    }
+}
+
+//方法二、利用for循环
+public class Solution {
+    public int Fibonacci(int n) {
+        int f1=1,f2=1,f=0;
+        if(n==0) return 0;
+        else if(n==1 || n==2) return 1;
+        else{
+        //注意i<=n
+            for(int i=3;i<=n;i++){
+            //f1=n-1;f2=n-2;
+                f=f1+f2;
+                f2=f1;
+                f1=f;
+            }
+            return f;
+        }
+    }
+}
