@@ -38,6 +38,7 @@ public class Solution {
             stack.push(listNode.val);
             listNode = listNode.next;
         }
+        //重点记忆判断栈是否为空
         while(!stack.isEmpty()){
             list.add(stack.pop());
         }
